@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonia D'Souza | Personal Profile</title>
+
+<style>
+:root{
+    --graphite:#3C3A40;
+    --mauve:#8D7B93;
+    --dusty:#CBB7D4;
+    --rose:#A67C8B;
+    --pink:#F6EEF7;
+    --lavender:#E9E0F3;
+    --white:#ffffff;
+    --shadow:rgba(0,0,0,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(135deg,#fdf9ff,#efe8f5,#f8eef5);
+    color:var(--graphite);
+    line-height:1.7;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+.hero{
+    max-width:900px;
+    width:100%;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+    border-radius:28px;
+    padding:60px 45px;
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+    text-align:center;
+}
+
+.avatar{
+    width:140px;
+    height:140px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--mauve),var(--rose));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:25px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:12px;
+}
+
+.tagline{
+    color:var(--rose);
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    text-decoration:none;
+    background:linear-gradient(135deg,var(--rose),var(--mauve));
+    color:white;
+    padding:14px 30px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+}
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    background:white;
+    margin:35px 0;
+    border-radius:22px;
+    padding:40px;
+    box-shadow:0 10px 30px var(--shadow);
+    opacity:0;
+    transform:translateY(30px);
+    transition:.8s;
+}
+
+section.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+h2{
+    margin-bottom:18px;
+    color:var(--rose);
+    font-size:2rem;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    background:var(--pink);
+    border-left:5px solid var(--mauve);
+    padding:15px;
+    border-radius:14px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    background:var(--lavender);
+}
+
+.activities{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.activity{
+    background:linear-gradient(135deg,#fff,#f8f3fb);
+    padding:18px;
+    border-radius:14px;
+    border:1px solid #eee;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--rose);
+    font-weight:bold;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+@media(max-width:700px){
+
+.hero{
+    padding:40px 25px;
+}
+
+h1{
+    font-size:2.2rem;
+}
+
+section{
+    padding:28px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<div class="avatar">SD</div>
+
+<h1>Hi! I'm Sonia D'Souza.</h1>
+
+<p class="tagline">
+High School Student • Business Enthusiast • AI Explorer • Future Innovator
+</p>
+
+<a href="#about" class="button">Learn More</a>
+
+</div>
+
+</header>
+
+<main>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I'm a high school student who enjoys exploring the intersection of business and artificial intelligence. Whether I'm researching how AI influences political advertising, designing research projects, or learning how machine learning can solve real-world problems, I enjoy transforming curiosity into meaningful action. I actively seek opportunities that challenge me academically and personally through STEM programs, research experiences, and collaborative projects that encourage creativity, leadership, and critical thinking.
+</p>
+
+<br>
+
+<p>
+I aspire to study business while continuing to explore emerging technologies and innovation. My goal is to combine analytical thinking with entrepreneurship to develop practical solutions that create positive impact. I believe that curiosity, perseverance, and a willingness to embrace new challenges are the foundation for lifelong learning and meaningful leadership.
+</p>
+
+</section>
+
+<section>
+
+<h2>Skills & Strengths</h2>
+
+<div class="skills">
+
+<div class="skill">🤖 Artificial Intelligence & Machine Learning</div>
+
+<div class="skill">📊 Research Design & Data Analysis</div>
+
+<div class="skill">💼 Business Strategy & Entrepreneurship</div>
+
+<div class="skill">🧠 Critical Thinking & Problem Solving</div>
+
+<div class="skill">🎤 Public Speaking & Research Presentations</div>
+
+<div class="skill">🤝 Leadership & Collaboration</div>
+
+<div class="skill">🐍 Python & Natural Language Processing (BERT)</div>
+
+<div class="skill">📅 Organization & Project Management</div>
+
+<div class="skill">🌱 Curiosity & Willingness to Learn</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Background & Activities</h2>
+
+<p>
+Outside of academics, I enjoy balancing creativity, service, and technology. Music has always been an important part of my life, and I play both the violin and the piano, experiences that have strengthened my discipline, patience, and appreciation for continuous improvement. I also speak Spanish, enjoy babysitting, and value opportunities that allow me to connect with and support others in my community.
+</p>
+
+<br>
+
+<p>
+Beyond music and community involvement, I love exploring technology through coding projects in Python and building neural networks. These experiences have strengthened my problem-solving skills and encouraged me to think creatively about how technology can address meaningful challenges. Whether I'm learning a new programming concept or working on a research project, I'm always excited to expand my knowledge and take on opportunities that help me grow both personally and academically.
+</p>
+
+<div class="activities">
+
+<div class="activity">🎻 Playing the Violin</div>
+
+<div class="activity">🎹 Playing the Piano</div>
+
+<div class="activity">👶 Babysitting</div>
+
+<div class="activity">🇪🇸 Speaking Spanish</div>
+
+<div class="activity">💻 Python Programming</div>
+
+<div class="activity">🧠 Building Neural Networks</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<p>
+I'd love to connect, collaborate, or discuss opportunities related to business, artificial intelligence, research, or STEM.
+</p>
+
+<br>
+
+<p>
+📧
+<a href="mailto:soniavdsouza@icloud.com">
+soniavdsouza@icloud.com
+</a>
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+Designed with curiosity, creativity, and a passion for learning • © 2026 Sonia D'Souza
+
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+},{threshold:0.15});
+
+document.querySelectorAll("section").forEach(section=>{
+observer.observe(section);
+});
+</script>
+
+</body>
+</html>
